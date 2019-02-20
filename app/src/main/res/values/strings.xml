@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidMadLibs</string>
+    <string name="noun">noun</string>
+    <string name="proper_noun">proper_noun</string>
+    <string name="verb">noun</string>
+    <string name="adjective">noun</string>
+
+
+    <string name="mad_lib1">From the $noun to the $noun that was $verb.</string>
 </resources>
