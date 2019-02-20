@@ -6,5 +6,5 @@
     <string name="adjective">noun</string>
 
 
-    <string name="mad_lib1">From the $noun to the $noun that was $verb.</string>
+    <string name="mad_lib1">From the $noun$ to the $noun$ that was $verb$.</string>
 </resources>

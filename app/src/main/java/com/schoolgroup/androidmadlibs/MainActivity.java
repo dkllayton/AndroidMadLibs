@@ -1,5 +1,6 @@
 package com.schoolgroup.androidmadlibs;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -20,5 +21,18 @@ public class MainActivity extends AppCompatActivity {
         // Get text from text input
         String text = null;
 
+    }
+
+    public void parse(String madLib) {
+        String[] words = madLib.split(" ");
+        for (String word : words) {
+            if (word.startsWith("$") && word.endsWith("$")) {
+                if (word.equals(getResources().getString(R.string.noun))) {
+
+                } else if (word.equals(getResources().getString(R.string.proper_noun))) {
+
+                }
+            }
+        }
     }
 }
