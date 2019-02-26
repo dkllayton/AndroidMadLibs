@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    private int id = 0;
     private ArrayList<String> madlibs;
     private int index;
     private ArrayList<Word> words;
@@ -29,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
         madlibs.add(getResources().getString(R.string.mad_lib_2));
         madlibs.add(getResources().getString(R.string.mad_lib_3));
 
+        id = (int) (Math.random() * madlibs.size());
         index = 0;
         words = new ArrayList<>();
-        madLib = madlibs.get((int) (Math.random() * madlibs.size()));
+        madLib = madlibs.get(id);
 
         parse();
 
@@ -87,9 +89,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void restart() {
+        id++;
         index = 0;
         words.clear();
-        madLib = madlibs.get((int) (Math.random() * madlibs.size()));
+        madLib = madlibs.get(id);
 
         parse();
 
