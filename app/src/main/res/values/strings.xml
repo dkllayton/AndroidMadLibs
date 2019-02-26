@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">AndroidMadLibs</string>
 
-    <string name="noun">noun</string>
-    <string name="plural_noun">plural_noun</string>
-    <string name="proper_noun">proper_noun</string>
-    <string name="verb">verb</string>
-    <string name="adjective">adjective</string>
+    <string name="hint">Hint</string>
+
+    <string name="write">Write </string>
+    <string name="period">.</string>
 
     <string name="next">Next</string>
     <string name="finish">Finish</string>
+    <string name="restart">Restart</string>
 
     <string name="test_mad_lib">From the $noun$ to the $noun$ that was $verb$ the end.</string>
     <string name="mad_lib1">There are many $adjective$ ways to choose a $noun$ to read. You could ask for $noun$ from your $proper_noun$ and family. Just don\'t ask $proper_noun$ - they only read $adjective$ books with lots of $plural_noun$ and drama.</string>

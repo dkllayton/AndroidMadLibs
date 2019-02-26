@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         prompt = findViewById(R.id.textView3);
         prompt.setText("Write " + words.get(0).getType() + ".");
         entry = findViewById(R.id.editText);
-        entry.setText(words.get(0).getType());
+        entry.setHint(words.get(0).getType());
     }
 
     public void submit() {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             viewMadLib();
         } else {
             prompt.setText("Write " + words.get(index).getType() + ".");
-            entry.setText(words.get(index).getType());
+            entry.setHint(words.get(index).getType());
         }
     }
 
@@ -68,10 +68,18 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         prompt.setText(finalMadLib);
+        prompt.setTextSize(20);
         entry.setActivated(false);
         entry.setVisibility(View.INVISIBLE);
-        submit.setActivated(false);
-        submit.setVisibility(View.INVISIBLE);
+        submit.setText(R.string.restart);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { restart(); }
+        });
+    }
+
+    public void restart() {
+
     }
 
     public void parse() {
