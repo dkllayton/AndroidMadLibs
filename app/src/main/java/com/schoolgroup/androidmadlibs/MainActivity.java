@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         madlibs = new ArrayList<>();
-        madlibs.add(getResources().getString(R.string.mad_lib1));
+        madlibs.add(getResources().getString(R.string.mad_lib_1));
+        madlibs.add(getResources().getString(R.string.mad_lib_2));
 
         index = 0;
         words = new ArrayList<>();

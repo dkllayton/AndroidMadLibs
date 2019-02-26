@@ -11,5 +11,6 @@
     <string name="restart">Restart</string>
 
     <string name="test_mad_lib">From the $noun$ to the $noun$ that was $verb$ the end.</string>
-    <string name="mad_lib1">There are many $adjective$ ways to choose a $noun$ to read. You could ask for $noun$ from your $proper_noun$ and family. Just don\'t ask $proper_noun$ - they only read $adjective$ books with lots of $plural_noun$ and drama.</string>
+    <string name="mad_lib_1">There are many $adjective$ ways to choose a $noun$ to read. You could ask for $noun$ from your $proper_noun$ and family. Just don\'t ask $proper_noun$ - they only read $adjective$ books with lots of $plural_noun$ and drama.</string>
+    <string name="mad_lib_2">Today a $occupation$ named $noun$ came to our school to talk to us about her job. She said the most important skill you need to know to do her job is to be able to $verb$ around (a) $adjective$ $noun$ . She said it was easy for her to learn her job because she loved to $verb$ when she was my age-and that helps a lot! If you\'re considering her profession, I hope you can be near (a) $adjective$ $noun$ . That\'s very important! If you get too distracted in that situation you won\'t be able to $verb$ next to (a) $noun$!</string>
 </resources>
