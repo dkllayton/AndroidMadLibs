@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    private ArrayList<String> madlibs;
     private int index;
     private ArrayList<Word> words;
     private String madLib;
@@ -23,9 +24,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        madlibs = new ArrayList<>();
+        madlibs.add(getResources().getString(R.string.mad_lib1));
+
         index = 0;
         words = new ArrayList<>();
-        madLib = getResources().getString(R.string.mad_lib1);
+        madLib = madlibs.get((int) (Math.random() * madlibs.size()));
 
         parse();
 
@@ -42,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submit() {
         String text = entry.getText().toString();
+        entry.setText("");
         words.get(index).setValue(text);
         index++;
         if (index == words.size() - 1) {
@@ -79,7 +84,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void restart() {
+        index = 0;
+        words.clear();
+        madLib = madlibs.get((int) (Math.random() * madlibs.size()));
 
+        parse();
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { submit(); }
+        });
+        prompt.setText("Write " + words.get(0).getType() + ".");
+        entry.setHint(words.get(0).getType());
+        entry.setActivated(true);
+        entry.setVisibility(View.VISIBLE);
+        submit.setText(R.string.next);
     }
 
     public void parse() {
