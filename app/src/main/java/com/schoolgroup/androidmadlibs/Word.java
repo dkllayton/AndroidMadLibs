@@ -1,12 +1,14 @@
 package com.schoolgroup.androidmadlibs;
 
 public class Word {
-    private final WordType type;
+    private final String type;
     private String value;
 
-    public Word(WordType type) {
+    public Word(String type) {
         this.type = type;
     }
+
+    public String getType() { return type; }
 
     public String getValue() {
         return value;
