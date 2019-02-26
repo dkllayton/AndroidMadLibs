@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submit() {
         String text = entry.getText().toString();
+        if (text.length() > 15) { text = text.substring(0, 15); }
         entry.setText("");
         words.get(index).setValue(text);
         index++;
